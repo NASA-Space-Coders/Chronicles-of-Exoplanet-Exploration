@@ -6,7 +6,7 @@ function myFunction(x) {
 let currentSlide = 0;  // Índice do slide atual
 const totalSlides = 5;  // Número total de slides (modifique conforme o número real)
 
-
+// Aqui podem ser adicionados novos slides, alterando a imagem e texto
 const slides = [
     
     {   

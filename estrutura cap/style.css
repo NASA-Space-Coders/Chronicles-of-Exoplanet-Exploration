@@ -12,7 +12,7 @@
 }
 
 body {
-    background-image: url('/capitulos/cap1/cap1Midia/background.jpg');
+    background-image: url('/estrutura cap/midiaGeral/background.jpg');
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -131,7 +131,6 @@ header {
     background-position: center;
     background-size: cover; /* Garante que a imagem cubra a área da div */
     background-repeat: no-repeat; /* Não repetir a imagem */
-    background-image: url('/capitulos/cap1/cap1Midia/imagem1.png');
 }
 
 
