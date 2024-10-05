@@ -12,7 +12,7 @@
 }
 
 body {
-    background-image: url('/cap1/cap1Midia/background.jpg');
+    background-image: url('/capitulos/cap1/cap1Midia/background.jpg');
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -71,6 +71,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    margin-top: -50px;
 }
 
 .astronauta-bubble {
@@ -92,9 +93,9 @@ header {
     position: relative;
     background: #453077;
     border-radius: .4em;
-    padding: 10px;
+    padding: 20px;
     color: white;
-    top: -340px;
+    top: -380px;
     left: 50px;
     max-width: 350px; /* Define a largura máxima para o balão */
     word-wrap: break-word; /* Quebra a palavra se for muito longa */
@@ -127,10 +128,10 @@ header {
 .planet-box {
     width: 700px;
     height: 500px;
-    border: 8px solid #E8E5E9;
     background-position: center;
     background-size: cover; /* Garante que a imagem cubra a área da div */
     background-repeat: no-repeat; /* Não repetir a imagem */
+    background-image: url('/capitulos/cap1/cap1Midia/imagem1.png');
 }
 
 

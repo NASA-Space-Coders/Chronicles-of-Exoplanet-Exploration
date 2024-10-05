@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estrutura cap/style.css">
+    <script src="script.js"></script>
+    <title>Capitulo I</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </nav>
+        <div id="cap-titulo">
+            <h1>Capítulo 1  -  Campos magnéticos</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="story-box">
+
+            <!--ATENÇÃO alterar a imagem inicial e texto inicial -->
+            <div class="astronauta-bubble">
+                <div class="astronauta">
+                    <!-- Imagem Inicial -->
+                    <img src="/capitulos/cap1/cap1Midia/astronauta.png" alt="astronauta">
+                </div>
+                <div class="speech-bubble" id="bubble-text">
+                    <!-- Texto Inicial-->
+                    <p>Exoplanetas são como mundos mágicos que orbitam estrelas bem distantes do nosso Sol. Pense neles como planetas que moram em outras casinhas no céu!</p>
+                </div>
+            </div>
+
+            <div class="planet-view">
+                <div class="planet-box" id="planet-box"></div> <!-- Div para o background -->
+                <div class="navegate">
+                    <label for="triangle-left" onclick="changeSlide(-1)">previous</label>
+                    <div class="left" onclick="changeSlide(-1)">
+                        <div class="triangle" id="triangle-left"></div>
+                    </div>
+                    <div class="right" onclick="changeSlide(1)">
+                        <div class="triangle" id="triangle-right"></div>
+                    </div>
+                    <label for="triangle-right" onclick="changeSlide(1)">next</label>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+</html>
