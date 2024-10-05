@@ -1,0 +1,171 @@
+@charset "utf-8";
+
+
+/*Fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url('/cap1/cap1Midia/background.jpg');
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    font-family: "Press Start 2P", system-ui;
+    align-items: center;
+    justify-content: center; /* Isso centraliza o conteúdo no header */
+    background-color: #453077;
+    padding: 18px;
+    position: relative; /* Para que o menu possa ser posicionado com position:absolute */
+}
+
+#cap-titulo {
+    position: relative;
+}
+
+#cap-titulo h1 {
+    font-size: 18px;
+    color: white;
+    text-align: center; /* Garante que o texto dentro do h1 seja centralizado */
+    margin: 0; /* Remove qualquer margem extra */
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    left: 18px; /* Posiciona o menu no canto superior esquerdo */
+}
+  
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #e7e7e7;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+  
+/* Rotate first bar */
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+  
+/* Fade out the second bar */
+.change .bar2 {opacity: 0;}
+  
+/* Rotate last bar */
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+.story-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.astronauta-bubble {
+    display: inline-block;
+    margin-top: 300px;
+}
+
+/*Astronauta Image*/
+
+.astronauta img {
+    width: 280px;
+}
+
+/*Balão*/
+
+.speech-bubble {
+    display: inline-block;
+    position: relative;
+    background: #453077;
+    border-radius: .4em;
+    padding: 10px;
+    color: white;
+    top: -340px;
+    left: 50px;
+    max-width: 350px; /* Define a largura máxima para o balão */
+    word-wrap: break-word; /* Quebra a palavra se for muito longa */
+}
+
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 21px solid transparent;
+	border-top-color: #5500bd;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -10.5px;
+	margin-bottom: -21px;
+}
+
+.planet-view {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.planet-box {
+    display: flex;
+    margin: 10px 0px;
+    width: 100%;
+    height: 100%;
+    border: 8px solid #E8E5E9;
+}
+
+.planet-box img {
+    width: 700px;
+}
+
+.navegate {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    width: 300px;
+}
+
+.navegate h2 {
+    margin: 0px 5px;
+}
+
+.triangle {
+    width: 0;
+	height: 0;
+	border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    transition: 0.1s;
+}
+
+#triangle-left {
+	border-right: 30px solid #555;
+}
+
+#triangle-left:hover {
+    border-right-color: rgb(247, 247, 247);
+}
+
+#triangle-right {
+	border-left: 30px solid #555;
+}
+
+#triangle-right:hover {
+    border-left-color: rgb(247, 247, 247);
+}
