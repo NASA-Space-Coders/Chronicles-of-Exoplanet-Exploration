@@ -118,33 +118,29 @@ body{
 }
 
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(24, 24, 24);
-    margin: 50px auto;
-    width: 1000px;
-    height: 700px;
     display: none;
-    text-decoration: none;
+    justify-content: center;
+    background-color: rgb(14, 14, 14);
+    margin-top: 100px;
+    height: 250px;
+    padding: 10px;
 }
 
-.games {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 350px;
-    height: 450px;
-    background-color: #772CE8;
-    border-radius: 8px;
+.container a {
+    text-decoration: none;
     color: white;
 }
 
-.descricao {
-    text-align: center;
+.caps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #453077;
+    width: 250px;
+    height: 250px;
+    margin: 0px 10px;
 }
 
-.descricao h1 {
-    font-size: 35px;
+.caps:hover {
+    background-color: #3c2277;
 }

@@ -18,13 +18,13 @@ function start(){
   const container = document.querySelector(".container");
   play.style.display = "none";
   container.style.display = "flex";
-  const audio = new Audio("/Midia/sons/clickSound.wav");
+  const audio = new Audio("/audio/home/clickSound.wav");
   audio.play();
 }
 
 function hoverSound(){
 
-  const audio = new Audio("/Midia/sons/hoverSound.wav");
+  const audio = new Audio("/audio/home/hoverSound.wav");
   audio.play();
 
 }

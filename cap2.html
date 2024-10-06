@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/estrutura cap/style.css">
-    <script src="script.js"></script>
-    <title>Capitulo I</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/cap2.js"></script>
+    <title>Capitulo 2 - Sol</title>
 </head>
 <body>
     <header>
@@ -17,7 +17,7 @@
             </div>
         </nav>
         <div id="cap-titulo">
-            <h1>Capítulo 1  -  Campos magnéticos</h1>
+            <h1>Capítulo 2  -  Sol</h1>
         </div>
     </header>
 
@@ -27,17 +27,17 @@
             <!--ATENÇÃO alterar o texto inicial -->
             <div class="astronauta-bubble">
                 <div class="astronauta">
-                    <img src="/estrutura cap/midiaGeral/astronauta.png" alt="astronauta">
+                    <img src="img/astronauta.png" alt="astronauta">
                 </div>
                 <div class="speech-bubble" id="bubble-text">
                     <!-- Texto Inicial-->
-                    <p>Exoplanetas são como mundos mágicos que orbitam estrelas bem distantes do nosso Sol. Pense neles como planetas que moram em outras casinhas no céu!</p>
+                    <p>A luz de uma estrela é como o 'abraço quentinho' que um exoplaneta recebe! Ela ajuda a manter o planeta aquecido e pode até permitir que tenha água líquida.</p>
                 </div>
             </div>
 
             <div class="planet-view">
                 <!-- ATENÇÃO alterar a imagem inicial também -->
-                <div class="planet-box" id="planet-box" style="background-image: url('/capitulos/cap1/cap1Midia/imagem1.png');"></div> <!-- Div para o background -->
+                <div class="planet-box" id="planet-box" style="background-image: url('img/cap2/cap2img1.png');"></div> <!-- Div para o background -->
                 <div class="navegate">
                     <label for="triangle-left" onclick="changeSlide(-1)">previous</label>
                     <div class="left" onclick="changeSlide(-1)">
@@ -49,6 +49,12 @@
                     <label for="triangle-right" onclick="changeSlide(1)">next</label>
                 </div>
             </div>
+
+            <!-- Botão oculto que aparecerá no final -->
+            <div id="next-chapter-button" style="display: none; text-align: center; margin-top: 20px;">
+                <a href="cap3.html" class="btn">Ir para o próximo capítulo</a>
+            </div>
+
 
         </section>
     </main>
