@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/quiz.css">
+    <script src="js/quiz.js" defer></script>
+    <title>JAE</title>
+</head>
+<body>
+    <header>
+        <h1>Quiz de Revisão</h1>
+    </header>
+    <main>
+        <form id="quiz-form">
+            <div class="question">
+                <p>1. O que são exoplanetas?</p>
+                <label><input type="radio" name="q1" value="errado"> Estrelas que orbitam o nosso Sol.</label><br>
+                <label><input type="radio" name="q1" value="certo"> Planetas que orbitam estrelas fora do Sistema Solar.</label><br>
+                <label><input type="radio" name="q1" value="errado"> Satélites naturais como a Lua.</label><br>
+            </div>
+            <div class="question">
+                <p>2. O que a luz de uma estrela faz pelos exoplanetas?</p>
+                <label><input type="radio" name="q2" value="errado"> Ela sempre torna os exoplanetas mais escuros e frios.</label><br>
+                <label><input type="radio" name="q2" value="errado"> Ela permite que os exoplanetas criem suas próprias estrelas.</label><br>
+                <label><input type="radio" name="q2" value="certo"> Ela ajuda a manter o exoplaneta aquecido e pode permitir a presença de água líquida.</label><br>
+            </div>
+            <div class="question">
+                <p>3. O que o campo magnético faz por um exoplaneta?</p>
+                <label><input type="radio" name="q3" value="certo"> Ele protege o exoplaneta dos ventos da estrela e ajuda a manter a atmosfera.</label><br>
+                <label><input type="radio" name="q3" value="errado"> Ele impede que o exoplaneta se aproxime de sua estrela.</label><br>
+                <label><input type="radio" name="q3" value="errado"> Ele faz com que o exoplaneta gire mais rápido ao redor da estrela.</label><br>
+            </div>
+            <div class="question">
+                <p>4. Por que a água líquida é importante em um exoplaneta?</p>
+                <label><input type="radio" name="q4" value="errado"> Porque ela faz o exoplaneta girar mais rápido.</label><br>
+                <label><input type="radio" name="q4" value="errado"> Porque ela transforma o exoplaneta em uma estrela.</label><br>
+                <label><input type="radio" name="q4" value="certo"> Porque ela ajuda a regular a temperatura e pode permitir o surgimento de vida.</label><br>
+            </div>
+            <button type="button" onclick="calcularAcertos()">Enviar Respostas</button>
+        </form>
+        <p id="resultado"></p>
+        <a href="index.html"><button id="voltar" style="display: none;" onclick="home()">Home</button></a>
+    </main>
+</body>
+</html>

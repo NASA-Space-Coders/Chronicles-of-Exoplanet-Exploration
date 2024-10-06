@@ -1,11 +1,33 @@
-@charset "utf-8";
+/* css/home.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-/*Fontes*/
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e2f;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
 
-body{
-    background-color: #000;
-    font-family: Arial, Helvetica, sans-serif
+header {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    display: inline-block;
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 5px;
 }
 
 .main {
@@ -22,39 +44,26 @@ body{
     animation: zoom 16s alternate infinite; 
 }
 
-@keyframes zoom {
-    0%{
-        transform: scale(1);
-    }
-    100%{
-        transform: scale(1.5);
-    }
+.logo h1 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
 }
 
-.menu {
+.play {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.logo {
-    position: relative;
-    display: flex;
-    margin: 0 auto;
-    width: 200px;
-    font-family: "Press Start 2P", system-ui;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 14px;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    transition: 0.3s;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-bottom-color: rgba(239, 183, 246, 0);
+.play h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
 }
 
-.logo:hover {
-    color: rgb(25, 255, 236);
+.start-button {
+    cursor: pointer;
 }
 
 .play {
@@ -118,29 +127,49 @@ body{
 }
 
 .container {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    background-color: rgb(14, 14, 14);
-    margin-top: 100px;
-    height: 250px;
-    padding: 10px;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.caps {
+    background-color: #2b2b3c;
+    padding: 20px 40px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
 }
 
 .container a {
     text-decoration: none;
-    color: white;
-}
-
-.caps {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #453077;
-    width: 250px;
-    height: 250px;
-    margin: 0px 10px;
 }
 
 .caps:hover {
-    background-color: #3c2277;
+    background-color: #3d3d5c;
+}
+
+.caps h2 {
+    font-size: 24px;
+    color: #fff;
+}
+
+/* Animações de fundo com estrelas */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at bottom, #1e1e2f, #000);
+    z-index: -1;
+    animation: stars 60s infinite linear;
+}
+
+@keyframes stars {
+    0% { background-position: 0 0; }
+    100% { background-position: -10000px 10000px; }
 }

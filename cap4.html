@@ -9,13 +9,6 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="container" onclick="myFunction(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
-        </nav>
         <div id="cap-titulo">
             <h1>Capítulo 4  -  Água</h1>
         </div>
@@ -36,7 +29,6 @@
             </div>
 
             <div class="planet-view">
-                <!-- ATENÇÃO alterar a imagem inicial também -->
                 <div class="planet-box" id="planet-box" style="background-image: url('img/cap4/cap4img1.png');"></div> <!-- Div para o background -->
                 <div class="navegate">
                     <label for="triangle-left" onclick="changeSlide(-1)">previous</label>
@@ -48,6 +40,10 @@
                     </div>
                     <label for="triangle-right" onclick="changeSlide(1)">next</label>
                 </div>
+            </div>
+
+            <div id="next-chapter-button" style="display: none; text-align: center; margin-top: 20px; padding: 15px;">
+                <a href="quiz.html" class="btn">Ir para o quiz de revisão</a>
             </div>
 
         </section>

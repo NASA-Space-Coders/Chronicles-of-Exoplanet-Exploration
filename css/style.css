@@ -16,6 +16,28 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.main {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 1px;
+    width: 1px;
+    background-color: transparent; /* Torna invisível o ponto central */
+    border-radius: 50%;
+    box-shadow: none; /* Será preenchido pelo JavaScript */
+    animation: zoom 16s alternate infinite; 
+}
+
+
+@keyframes zoom {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.5);
+    }
+}
+
 header {
     display: flex;
     font-family: 'Nasalization', sans-serif;
@@ -36,23 +58,6 @@ header {
     text-align: center; /* Garante que o texto dentro do h1 seja centralizado */
     margin: 0; /* Remove qualquer margem extra */
 }
-
-.container {
-    display: inline-block;
-    cursor: pointer;
-    position: absolute;
-    top: 8px;
-    left: 18px; /* Posiciona o menu no canto superior esquerdo */
-}
-  
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #e7e7e7;
-    margin: 6px 0;
-    transition: 0.4s;
-}
-  
 /* Rotate first bar */
 .change .bar1 {
     transform: translate(0, 11px) rotate(-45deg);
@@ -95,10 +100,12 @@ header {
     border-radius: .4em;
     padding: 20px;
     color: white;
-    top: -380px;
+    top: -440px;
     left: 50px;
+    min-height: 100px; /* Defina uma altura mínima */
     max-width: 350px; /* Define a largura máxima para o balão */
     word-wrap: break-word; /* Quebra a palavra se for muito longa */
+    font-size: 20px;
 }
 
 
@@ -131,8 +138,8 @@ header {
     background-position: center;
     background-size: cover; /* Garante que a imagem cubra a área da div */
     background-repeat: no-repeat; /* Não repetir a imagem */
+    transition: background-image 0.5s ease; /* Suaviza a transição entre imagens */
 }
-
 
 .planet-box img {
     width: 700px;
