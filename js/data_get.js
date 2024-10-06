@@ -1,0 +1,1 @@
+fetch("db/database.json")
