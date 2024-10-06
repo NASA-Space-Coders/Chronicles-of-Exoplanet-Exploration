@@ -32,7 +32,8 @@ function changeSlide(direction) {
     if (currentSlide < 0) {
         currentSlide = slides.length - 1;
     } else if (currentSlide >= slides.length) {
-        currentSlide = 0;
+        currentSlide = 0
+        window.location.assign('cap2.html')
     }
 
     // Altera o background da div e o texto do balão
