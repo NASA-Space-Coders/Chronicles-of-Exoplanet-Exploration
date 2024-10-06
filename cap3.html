@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/cap3.js"></script>
+    <title>Capitulo 3 - Campo magnético</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </nav>
+        <div id="cap-titulo">
+            <h1>Capítulo 3  -  Campo magnético</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="story-box">
+
+            <!--ATENÇÃO alterar o texto inicial -->
+            <div class="astronauta-bubble">
+                <div class="astronauta">
+                    <img src="img/astronauta.png" alt="astronauta">
+                </div>
+                <div class="speech-bubble" id="bubble-text">
+                    <!-- Texto Inicial-->
+                    <p>O campo magnético é como um escudo invisível que protege o exoplaneta dos ventos fortes da sua estrela, mantendo tudo seguro e tranquilo!</p>
+                </div>
+            </div>
+
+            <div class="planet-view">
+                <!-- ATENÇÃO alterar a imagem inicial também -->
+                <div class="planet-box" id="planet-box" style="background-image: url('img/cap3/cap3img1.png');"></div> <!-- Div para o background -->
+                <div class="navegate">
+                    <label for="triangle-left" onclick="changeSlide(-1)">previous</label>
+                    <div class="left" onclick="changeSlide(-1)">
+                        <div class="triangle" id="triangle-left"></div>
+                    </div>
+                    <div class="right" onclick="changeSlide(1)">
+                        <div class="triangle" id="triangle-right"></div>
+                    </div>
+                    <label for="triangle-right" onclick="changeSlide(1)">next</label>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+</html>
