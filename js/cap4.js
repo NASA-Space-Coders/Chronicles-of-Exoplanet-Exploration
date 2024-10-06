@@ -41,6 +41,16 @@ function changeSlide(direction) {
         document.getElementById('next-chapter-button').style.display = 'none';
     }
 }
-  
+
+document.addEventListener("keydown", function(event) {
+    if (event.keyCode == 39) {
+      changeSlide(1);
+    }
+
+    if (event.keyCode == 37) {
+        changeSlide(-1);
+    }
+})
+
 document.getElementById('planet-box').style.backgroundImage = `url(${slides[0].image})`;
   
