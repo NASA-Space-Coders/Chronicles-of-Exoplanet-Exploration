@@ -10,16 +10,16 @@ const totalSlides = 5;  // Número total de slides (modifique conforme o número
 const slides = [
     
     {   
-        image: '/capitulos/cap1/cap1Midia/imagem1.png',
+        image: 'img/cap1/imagem1.png',
         text: 'Exoplanetas são como mundos mágicos que orbitam estrelas bem distantes do nosso Sol. Pense neles como planetas que moram em outras casinhas no céu!',
     },
 
     {   
-        image: '/capitulos/cap1/cap1Midia/imagem3.png',
+        image: 'img/cap1/imagem3.png',
         text: 'Esses planetas podem ser super quentes, frios como gelo, gasosos como Júpiter ou rochosos como a Terra. Cada um é diferente, com suas próprias surpresas!',
     }, 
     {   
-        image: '/capitulos/cap1/cap1Midia/imagem2.png',
+        image: 'img/cap1/imagem2.png',
         text: 'O mais incrível é que, em alguns desses exoplanetas, pode até existir água e, quem sabe, vida! Eles são mistérios esperando para serem descobertos!',
     },
 ];

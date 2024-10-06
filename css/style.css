@@ -12,7 +12,7 @@
 }
 
 body {
-    background-image: url('/estrutura cap/midiaGeral/background.jpg');
+    background-image: url('../img/background.jpg');
     font-family: Arial, Helvetica, sans-serif;
 }
 
