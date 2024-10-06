@@ -18,7 +18,7 @@ const slides = [
     },
     {
         image: '/img/cap3/curiosidade3.jpg',
-        text: 'Fato curioso! O planeta Kepler-1514b é um verdadeiro colosso, pesando cerca de 1.678 vezes mais que a Terra. A uma distância de cerca de 122,59 quintilhões de quilômetros, sua temperatura atinge 388 kelvins, revelando um ambiente intrigante e enigmático em nosso vasto universo.'
+        text: 'Fato curioso! Kepler-1514b é um colosso, 1,678 vezes mais massivo que a Terra, a 122,59 quintilhões de quilômetros de distância, com uma temperatura de 388 kelvins.'
     }
 ];
 
