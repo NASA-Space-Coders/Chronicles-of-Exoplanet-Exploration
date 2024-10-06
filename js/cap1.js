@@ -17,7 +17,7 @@ const slides = [
         text: 'O mais incrível é que, em alguns desses exoplanetas, pode até existir água e, quem sabe, vida! Eles são mistérios esperando para serem descobertos!',
     },
     {
-        image: '/img/cap1/curiosidade1.jpg',
+        image: 'img/cap1/curiosidade1.jpg',
         text: 'Fato curioso! O planeta Kepler-46b é um gigante gasoso, 1,907 vezes mais massivo que a Terra, localizado a 239 quintilhões de quilômetros de distância, com uma temperatura de 543 kelvins.'
     }
 ];
@@ -35,6 +35,16 @@ function changeSlide(direction) {
     document.getElementById('planet-box').style.backgroundImage = `url(${slides[currentSlide].image})`;
     document.getElementById('bubble-text').innerHTML = `<p>${slides[currentSlide].text}</p>`;
 }
+
+document.addEventListener("keydown", function(event) {
+    if (event.keyCode == 39) {
+      changeSlide(1);
+    }
+
+    if (event.keyCode == 37) {
+        changeSlide(-1);
+    }
+})
   
 document.getElementById('planet-box').style.backgroundImage = `url(${slides[0].image})`;
   

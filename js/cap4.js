@@ -17,7 +17,7 @@ const slides = [
         text: 'Além disso, a água é o lugar perfeito para as primeiras formas de vida aparecerem, como uma piscina mágica onde os seres podem começar a nadar e crescer!',
     },
     {
-        image: '/img/cap4/curiosidade4.jpg',
+        image: 'img/cap4/curiosidade4.jpg',
         text: 'Fato curioso! O planeta Kepler-411e pesa 10,8 vezes mais que a Terra, está a 47 quintilhões de quilômetros de distância e tem uma temperatura de 593 kelvins, muito mais quente que nosso planeta.'
     }
 ];
@@ -41,6 +41,16 @@ function changeSlide(direction) {
         document.getElementById('next-chapter-button').style.display = 'none';
     }
 }
+
+document.addEventListener("keydown", function(event) {
+    if (event.keyCode == 39) {
+      changeSlide(1);
+    }
+
+    if (event.keyCode == 37) {
+        changeSlide(-1);
+    }
+})
   
 document.getElementById('planet-box').style.backgroundImage = `url(${slides[0].image})`;
   

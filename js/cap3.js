@@ -17,7 +17,7 @@ const slides = [
         text: 'Esse campo especial também ajuda a manter o clima estável, criando um lugar mais acolhedor para a vida, como uma capa mágica que cuida do planeta!',
     },
     {
-        image: '/img/cap3/curiosidade3.jpg',
+        image: 'img/cap3/curiosidade3.jpg',
         text: 'Fato curioso! Kepler-1514b é um colosso, 1,678 vezes mais massivo que a Terra, a 122,59 quintilhões de quilômetros de distância, com uma temperatura de 388 kelvins.'
     }
 ];
@@ -36,6 +36,16 @@ function changeSlide(direction) {
     document.getElementById('planet-box').style.backgroundImage = `url(${slides[currentSlide].image})`;
     document.getElementById('bubble-text').innerHTML = `<p>${slides[currentSlide].text}</p>`;
 }
+
+document.addEventListener("keydown", function(event) {
+    if (event.keyCode == 39) {
+      changeSlide(1);
+    }
+
+    if (event.keyCode == 37) {
+        changeSlide(-1);
+    }
+})
   
 document.getElementById('planet-box').style.backgroundImage = `url(${slides[0].image})`;
   
