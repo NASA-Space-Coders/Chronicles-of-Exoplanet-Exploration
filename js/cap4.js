@@ -15,11 +15,11 @@ const slides = [
     },
 
     {   
-        image: 'img/cap4/cap4img2.png',
+        image: 'img/cap4/cap4img1.png',
         text: 'Ela refresca o planeta, ajudando a regular a temperatura, como um cobertor que mantém tudo no ponto certo, nem muito quente, nem muito frio!',
     }, 
     {   
-        image: 'img/cap4/cap4img2.png',
+        image: 'img/cap4/cap4img1.png',
         text: 'Além disso, a água é o lugar perfeito para as primeiras formas de vida aparecerem, como uma piscina mágica onde os seres podem começar a nadar e crescer!',
     },
 ];
@@ -27,17 +27,24 @@ const slides = [
 function changeSlide(direction) {
     // Atualiza o slide atual
     currentSlide += direction;
-  
+
     // Verifica se o índice está fora dos limites e faz um loop
     if (currentSlide < 0) {
         currentSlide = slides.length - 1;
     } else if (currentSlide >= slides.length) {
         currentSlide = 0;
     }
-  
+
     // Altera o background da div e o texto do balão
     document.getElementById('planet-box').style.backgroundImage = `url(${slides[currentSlide].image})`;
     document.getElementById('bubble-text').innerHTML = `<p>${slides[currentSlide].text}</p>`;
+
+    // Verifica se é o último slide para mostrar o botão
+    if (currentSlide === slides.length - 1) {
+        document.getElementById('next-chapter-button').style.display = 'block';
+    } else {
+        document.getElementById('next-chapter-button').style.display = 'none';
+    }
 }
   
 // Inicializa o primeiro slide como background
