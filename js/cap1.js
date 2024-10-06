@@ -27,17 +27,24 @@ const slides = [
 function changeSlide(direction) {
     // Atualiza o slide atual
     currentSlide += direction;
-  
+
     // Verifica se o índice está fora dos limites e faz um loop
     if (currentSlide < 0) {
         currentSlide = slides.length - 1;
     } else if (currentSlide >= slides.length) {
         currentSlide = 0;
     }
-  
+
     // Altera o background da div e o texto do balão
     document.getElementById('planet-box').style.backgroundImage = `url(${slides[currentSlide].image})`;
     document.getElementById('bubble-text').innerHTML = `<p>${slides[currentSlide].text}</p>`;
+
+    // Verifica se é o último slide para mostrar o botão
+    if (currentSlide === slides.length - 1) {
+        document.getElementById('next-chapter-button').style.display = 'block';
+    } else {
+        document.getElementById('next-chapter-button').style.display = 'none';
+    }
 }
   
 // Inicializa o primeiro slide como background

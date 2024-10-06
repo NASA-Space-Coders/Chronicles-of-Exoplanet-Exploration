@@ -23,21 +23,17 @@
 
     <main>
         <section class="story-box">
-
-            <!--ATENÇÃO alterar o texto inicial -->
             <div class="astronauta-bubble">
                 <div class="astronauta">
                     <img src="img/astronauta.png" alt="astronauta">
                 </div>
                 <div class="speech-bubble" id="bubble-text">
-                    <!-- Texto Inicial-->
                     <p>Exoplanetas são como mundos mágicos que orbitam estrelas bem distantes do nosso Sol. Pense neles como planetas que moram em outras casinhas no céu!</p>
                 </div>
             </div>
 
             <div class="planet-view">
-                <!-- ATENÇÃO alterar a imagem inicial também -->
-                <div class="planet-box" id="planet-box" style="background-image: url('img/cap1/imagem1.png');"></div> <!-- Div para o background -->
+                <div class="planet-box" id="planet-box" style="background-image: url('img/cap1/imagem1.png');"></div>
                 <div class="navegate">
                     <label for="triangle-left" onclick="changeSlide(-1)">previous</label>
                     <div class="left" onclick="changeSlide(-1)">
@@ -48,6 +44,11 @@
                     </div>
                     <label for="triangle-right" onclick="changeSlide(1)">next</label>
                 </div>
+            </div>
+
+            <!-- Botão oculto que aparecerá no final -->
+            <div id="next-chapter-button" style="display: none; text-align: center; margin-top: 20px;">
+                <a href="cap2.html" class="btn">Ir para o próximo capítulo</a>
             </div>
 
         </section>

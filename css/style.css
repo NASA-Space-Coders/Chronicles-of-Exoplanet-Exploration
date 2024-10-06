@@ -176,3 +176,26 @@ label:hover {
 #triangle-right:hover {
     border-left-color: rgb(247, 247, 247);
 }
+
+#next-chapter-button {
+    width: 100px;
+    color: white;
+    font-family: 'Nasalization', sans-serif;
+    background: none;
+    border-radius: 5px;
+    border: 1px solid white;
+    text-align: center;
+    transition: 0.2s;
+}
+
+#next-chapter-button:hover {
+    background-color: rgb(15, 15, 15);
+}
+
+a {
+    text-decoration: none;
+}
+
+#next-chapter-button a {
+    color: white;
+}
