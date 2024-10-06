@@ -9,13 +9,17 @@ const slides = [
     },
 
     {   
-        image: 'img/cap4/cap4img1.png',
+        image: 'img/cap4/cap4img2.png',
         text: 'Ela refresca o planeta, ajudando a regular a temperatura, como um cobertor que mantém tudo no ponto certo, nem muito quente, nem muito frio!',
     }, 
     {   
-        image: 'img/cap4/cap4img1.png',
+        image: 'img/cap4/cap4img3.png',
         text: 'Além disso, a água é o lugar perfeito para as primeiras formas de vida aparecerem, como uma piscina mágica onde os seres podem começar a nadar e crescer!',
     },
+    {
+        image: '/img/cap4/curiosidade4.jpg',
+        text: 'Fato curioso! O planeta Kepler-411e pesa 10,8 vezes mais que a Terra, está a 47 quintilhões de quilômetros de distância e tem uma temperatura de 593 kelvins, muito mais quente que nosso planeta.'
+    }
 ];
 
 function changeSlide(direction) {

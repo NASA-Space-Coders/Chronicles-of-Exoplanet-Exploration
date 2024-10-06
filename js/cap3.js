@@ -9,13 +9,17 @@ const slides = [
     },
 
     {   
-        image: 'img/cap3/cap3img1.jpg',
+        image: 'img/cap3/cap3img2.png',
         text: 'Sem esse escudo, os ventos espaciais poderiam levar embora a atmosfera do exoplaneta, deixando-o desprotegido, como um castelo sem muralhas!',
     }, 
     {   
-        image: 'img/cap3/cap3img1.jpg',
+        image: 'img/cap3/cap3img3.jpg',
         text: 'Esse campo especial também ajuda a manter o clima estável, criando um lugar mais acolhedor para a vida, como uma capa mágica que cuida do planeta!',
     },
+    {
+        image: '/img/cap3/curiosidade3.jpg',
+        text: 'Fato curioso! O planeta Kepler-1514b é um verdadeiro colosso, pesando cerca de 1.678 vezes mais que a Terra. A uma distância de cerca de 122,59 quintilhões de quilômetros, sua temperatura atinge 388 kelvins, revelando um ambiente intrigante e enigmático em nosso vasto universo.'
+    }
 ];
 
 function changeSlide(direction) {

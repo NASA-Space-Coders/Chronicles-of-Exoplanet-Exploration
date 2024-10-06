@@ -16,6 +16,10 @@ const slides = [
         image: 'img/cap2/cap2img2.png',
         text: 'A luz também nos ajuda a descobrir mais sobre esses mundos distantes. Quando a luz de uma estrela passa pelo exoplaneta, podemos descobrir se ele tem uma atmosfera ou até sinais de vida!',
     },
+    {
+        image: '/img/cap2/curiosidade2.jpg',
+        text: 'Fato curioso! O planeta Kepler-62d é um planeta intrigante, 14 vezes mais massivo que a Terra, localizado a cerca de 9,28 quintilhões de quilômetros de distância, com uma temperatura de 510 kelvins.'
+    }
 ];
 
 function changeSlide(direction) {
